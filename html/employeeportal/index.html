@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Company HR portal</title>
+
+    <style>
+        body{
+            background-color: #d0f1f5;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header,footer{
+            background-color: #a3eaea;
+            text-align: center;
+            padding:2px;
+        }
+
+        .naviitem{
+            display:inline;
+            padding:15px;
+        }
+
+        .naviitem a{
+        text-decoration:none;
+        color:rgb(1, 15, 11);
+        }
+
+        .registerform{
+        text-align:center;
+        color: rgb(6, 10, 9);
+        }
+
+        .directory{
+            text-align: center;
+            color: rgb(6, 10, 9);
+        }
+
+        table{
+            width:100%;
+        }
+
+        .us{
+            text-align: center;
+            color: rgb(6, 10, 9);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>welcome to company HR portal </h1>
+            <ul>
+                <li class="naviitem"><a href="#employee-registration">emloyee registration</a></li>
+                <li class="naviitem"><a href="#employee-directory">emloyee directory</a></li>
+                <li class="naviitem"><a href="#contact-us">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="./images/image1.png"></image>
+
+    <section id="employee-registration" class="registerform">
+        <h2>employee registration</h2>
+        <p>Fill  the below form to register as employee</p>
+
+        <form>
+            <label for="name">name:</label>
+            <input type="text" id="name"><br><br>
+
+            <label for="email">email id:</label>
+            <input type="email" id="email"><br><br>
+
+            <label for="password">password</label>
+            <input type="password" id="password"><br><br>
+
+            <label for="age">age:</label>
+            <input type="age" id="age"><br><br>
+
+            <label for="role">select role:</label>
+            <select>
+                <option>software engineer</option>
+                <option>sales executive</option>
+                <option>product manager</option>
+                <option>HR representative</option>
+            </select><br><br>
+
+            <label for="joining date">joining date:</label>
+            <input type="date" id="joining date"><br><br>
+
+            <input type="submit">
+        </form>
+    </section>
+
+    <section id="employee-directory" class="directory">
+        <h2>employee directory</h2>
+        <p>List of all registered employees.</p>
+
+        <table border="1px" color="black">
+
+            <tr>
+                <th>Employee id</th>
+                <th>Employee name</th>
+                <th>Employee role</th>
+            </tr>
+
+            <tr>
+                <td>234</td>
+                <td>Yash Upadhyay</td>
+                <td>software engineer</td>
+            </tr>
+
+            <tr>
+                <td>235</td>
+                <td>Ankit Mishra</td>
+                <td>sales executive</td>
+            </tr>
+
+            <tr>
+                <td>236</td>
+                <td>Ujjwal Upadhyay</td>
+                <td>HR representative</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact-us" class="us">
+        <h2>contact us</h2>
+        <p>You can contact us at company@official.com or 9888453241</p>
+        <p>office timing:9am to 6pm</p>
+    </section>
+
+    <footer>
+        <p>&copy;2023 company name</p>
+    </footer>
+</body>
+</html>
